@@ -1,0 +1,25 @@
+.order-section {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color for contrast */
+  text-align: center;
+}
+
+.order-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.coming-soon {
+  font-size: 20px;
+  color: #e67e22; /* Use a color to make it stand out */
+  margin-bottom: 20px;
+}
+
+.store-link {
+  color: #3498db; /* Color for the link */
+  text-decoration: none;
+}
+
+.store-link:hover {
+  text-decoration: underline;
+}

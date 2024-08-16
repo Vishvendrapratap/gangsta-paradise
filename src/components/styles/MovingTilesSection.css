@@ -1,0 +1,43 @@
+/* src/MovingTilesSection.css */
+.moving-tiles-section {
+  overflow: hidden;
+  position: relative;
+  background-color: black; /* Light background color */
+  padding: 20px;
+}
+
+.moving-tiles-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: calc(100% * 4);
+  animation: moveTiles 20s linear infinite;
+}
+
+.moving-tile {
+  width: 400px; /* Set width */
+  height: 300px; /* Set height */
+  margin-right: 4px; /* No margin for seamless effect */
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Animation for moving tiles */
+@keyframes moveTiles {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.moving-tiles-section:hover .moving-tiles-container {
+  animation-play-state: paused;
+}
+
+/* Elevate tile on hover */
+.moving-tile:hover {
+  transform: translateY(-10px); /* Move the card up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}

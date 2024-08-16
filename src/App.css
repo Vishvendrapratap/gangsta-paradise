@@ -1,0 +1,49 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff; /* White text color for high contrast */
+  background-color: #000; /* Black background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: #1d1d1d; /* Slightly lighter black for header */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+main {
+  margin-top: 80px; /* Space for the fixed header */
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1d1d1d;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}

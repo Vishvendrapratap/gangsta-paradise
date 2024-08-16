@@ -1,0 +1,36 @@
+@keyframes fadeAway {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 110px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  border: 20px solid black;
+  flex-direction: column;
+  background-color: white;
+}
+
+.image-container img {
+  width: 50%;
+  height: 75px;
+  padding: 40px;
+}
+
+@keyframes slide {
+  0% {
+    top: 100%; /* Start off-screen at the bottom */
+  }
+  50% {
+    top: 0; /* Move to the top */
+  }
+  100% {
+    top: 100%; /* Move back to the bottom */
+  }
+}
